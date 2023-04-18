@@ -13,7 +13,7 @@ export default function AboutPage() {
       </p>
       <div className="prose prose-neutral dark:prose-invert text-neutral-800 dark:text-neutral-200">
         <p>
-          I'm currently <b>Software Developer at Lactec</b>, where I l have
+          I'm currently <b>Software Developer at Lactec</b>. I have
           gained extensive experience in developing software solutions for a
           wide range of clients and industries. From building custom web and
           mobile applications to implementing complex data management systems, I
@@ -30,7 +30,7 @@ export default function AboutPage() {
         </p>
         <p>
           I enjoy pursuing personal growth through activities such as
-          meditation, reading, and some religious books.
+          meditation, listen some music, and reading religious books.
         </p>
         <p className="mb-8">
           If you liked me, feel free to contact me. I'm always open to new
