@@ -2,7 +2,6 @@ import {
   ArrowIcon,
   GitHubIcon,
   LinkedinIcon,
-  YoutubeIcon,
 } from "components/icons";
 
 export default function AboutPage() {
