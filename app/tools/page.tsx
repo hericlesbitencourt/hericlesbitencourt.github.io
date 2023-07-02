@@ -16,8 +16,8 @@ export default function ToolsPage() {
       <div className="prose prose-neutral dark:prose-invert">
         <h3 id="coding">Coding</h3>
         <ul>
-          <li>Languages: Javascript and Python</li>
-          <li>Backend frameworks: Django, Flask and NodeJS</li>
+          <li>Languages: JavaScript/TypeScript and Python</li>
+          <li>Backend frameworks: Django, FastAPI and NodeJS</li>
           <li>Frontend frameworks: React, Next.js, Vue.js and Angular.</li>
           <li>
             Editor: VSCode
