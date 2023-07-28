@@ -19,7 +19,7 @@ export default async function HomePage() {
         {about()}
       </p>
 
-      <a className="flex justify-center bg-black text-white rounded p-2 gap-2 font-bold w-48" href='/Hericles Bitencourt Rocha RESUME.pdf'>Download Resume</a>
+      <a className="flex justify-center bg-black text-white rounded p-2 gap-2 font-bold w-48" href='/Hericles Resume.pdf'>Download Resume</a>
       <div className="flex items-start md:items-center my-8 flex-col md:flex-row">
         <Image
           alt={name}

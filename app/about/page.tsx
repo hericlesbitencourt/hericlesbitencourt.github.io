@@ -9,11 +9,11 @@ export default function AboutPage() {
     <section>
       <h1 className="font-bold text-3xl font-serif">About Me</h1>
       <p className="my-5 text-neutral-800 dark:text-neutral-200">
-        Hey there! My name is Hericles, and I'm a software developer based in the beautiful city of Salvador, Brazil. 
+        Hey there! My name is Hericles, and I'm a software engineer based in the beautiful city of Salvador, BA, Brazil. 
       </p>
       <div className="prose prose-neutral dark:prose-invert text-neutral-800 dark:text-neutral-200">
         <p>
-          I'm currently <b>Software Developer at Lactec</b>. I have
+          I'm currently <b>Software Engineer at Lactec</b>. I have
           gained extensive experience in developing software solutions for a
           wide range of clients and industries. From building custom web and
           mobile applications to implementing complex data management systems, I

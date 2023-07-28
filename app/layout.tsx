@@ -17,10 +17,10 @@ export const metadata: Metadata = {
     default: 'Hericles Bitencourt Rocha',
     template: '%s | Hericles Bitencourt Rocha',
   },
-  description: 'Software Developer and Computer Engineering Student.',
+  description: 'Software Engineer and Computer Engineering Student.',
   openGraph: {
     title: 'Hericles Bitencourt Rocha',
-    description: 'Software Developer and Computer Engineering Student.',
+    description: 'Software Engineer and Computer Engineering Student.',
     url: 'https://hericlesbitencourt.com',
     siteName: 'Hericles Bitencourt Rocha',
     images: [
