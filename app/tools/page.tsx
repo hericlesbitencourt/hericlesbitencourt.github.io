@@ -18,13 +18,13 @@ export default function ToolsPage() {
         <ul>
           <li>Languages: JavaScript/TypeScript and Python</li>
           <li>Backend frameworks: Django, FastAPI and NodeJS</li>
-          <li>Frontend frameworks: React, Next.js, Vue.js and Angular.</li>
+          <li>Frontend frameworks/libraries: React, Next.js, Vue.js and Angular.</li>
           <li>
             Editor: VSCode
           </li>
           <li>Theme: Monokai Pro</li>
           <li>Terminal: Hyper / zsh / Bash</li>
-          <li>Containerization: Docker</li>
+          <li>Containerization: Docker and Kubernetes (K8S)</li>
           <li>Databases: PostgreSQL, MariaDB, MySQL server and SQLServer</li>
         </ul>
         <h3 id="operational-systems">Operational Systems</h3>

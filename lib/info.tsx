@@ -5,7 +5,7 @@ export const avatar = me;
 export const about = () => {
   return (
     <>
-      Hey, I'm a passionate software engineer with a strong focus on continuous
+      Hey, I'm a passionate Full Stack Software Engineer with a strong focus on continuous
       learning and growth. I work at Lactec as a Software Engineer.
     </>
   );
