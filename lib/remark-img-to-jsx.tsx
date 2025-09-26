@@ -7,13 +7,14 @@ export default function remarkImgToJsx() {
     visit(
       tree,
       // only visit p tags that contain an img element
-      (node) => node.type === 'paragraph' && node.children.some((n) => n.type === 'image'),
-      (node) => {
+      (node: any) => node.type === 'paragraph' && node.children?.some((n: any) => n.type === 'image'),
+      (node: any) => {
         const imageNode = node.children.find((n) => n.type === 'image')
 
         // only local files
         if (fs.existsSync(`${process.cwd()}/public${imageNode.url}`)) {
-          const dimensions = sizeOf(`${process.cwd()}/public${imageNode.url}`)
+          const imageBuffer = fs.readFileSync(`${process.cwd()}/public${imageNode.url}`)
+          const dimensions = sizeOf(new Uint8Array(imageBuffer))
 
           // Convert original node to next/image
           ;(imageNode.type = 'mdxJsxFlowElement'),

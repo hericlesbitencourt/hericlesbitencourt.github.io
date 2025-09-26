@@ -7,7 +7,8 @@ const siteMetadata = {
   theme: 'system', // system, dark or light
   siteUrl: 'https://www.hericlesbitencourt.com/',
   siteRepo: 'https://github.com/hericlesbitencourt/portifolio',
-  siteLogo: '/static/images/raph-logo.png',
+  siteLogo: '/static/images/avatar.jpeg',
+  socialBanner: '/static/images/banner.png',
   image: '/static/images/avatar.jpeg',
   email: 'hericlesbitencourt@icloud.com',
   github: 'https://github.com/hericlesbitencourt',

@@ -3,6 +3,16 @@ import fs from 'fs'
 import matter from 'gray-matter'
 import path from 'path'
 import readingTime from 'reading-time'
+
+// Define type for frontmatter objects
+interface Frontmatter {
+  slug: string
+  date: string | null
+  readingTime?: any
+  fileName?: string
+  draft?: boolean
+  [key: string]: any // Allow for additional properties from markdown frontmatter
+}
 // import { visit } from 'unist-util-visit'
 import getAllFilesRecursively from './utils/files'
 // Remark packages
@@ -60,7 +70,7 @@ export async function getFileBySlug(type, slug) {
     source,
     // mdx imports can be automatically source from the components directory
     cwd: path.join(root, 'components'),
-    xdmOptions(options, frontmatter) {
+    mdxOptions(options, frontmatter) {
       // this is the recommended way to add custom remark/rehype plugins:
       // The syntax might look weird, but it protects you in case we add/remove
       // plugins in the future.
@@ -107,12 +117,12 @@ export async function getFileBySlug(type, slug) {
   }
 }
 
-export async function getAllFilesFrontMatter(folder) {
+export async function getAllFilesFrontMatter(folder: string) {
   const prefixPaths = path.join(root, 'content', folder)
 
   const files = getAllFilesRecursively(prefixPaths)
 
-  const allFrontMatter = []
+  const allFrontMatter: Frontmatter[] = []
 
   files.forEach((file) => {
     // Replace is needed to work on Windows

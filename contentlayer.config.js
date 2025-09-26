@@ -1,6 +1,6 @@
-import { defineDocumentType, makeSource } from "contentlayer/source-files";
+import { defineDocumentType, makeSource } from "contentlayer2/source-files";
 
-/** @type {import('contentlayer/source-files').ComputedFields} */
+/** @type {import('contentlayer2/source-files').ComputedFields} */
 const computedFields = {
   slug: {
     type: "string",
@@ -42,6 +42,43 @@ const computedFields = {
 //   },
 //   computedFields,
 // }));
+
+export const Authors = defineDocumentType(() => ({
+  name: "Authors",
+  filePathPattern: `authors/**/*.md`,
+  contentType: "markdown",
+  fields: {
+    name: {
+      type: "string",
+      required: true,
+    },
+    avatar: {
+      type: "string",
+    },
+    occupation: {
+      type: "string",
+    },
+    company: {
+      type: "string",
+    },
+    email: {
+      type: "string",
+    },
+    linkedin: {
+      type: "string",
+    },
+    github: {
+      type: "string",
+    },
+    twitter: {
+      type: "string",
+    },
+    bluesky: {
+      type: "string",
+    },
+  },
+  computedFields,
+}));
 
 export const Projects = defineDocumentType(() => ({
   name: "Projects",
@@ -88,5 +125,5 @@ export const Projects = defineDocumentType(() => ({
 
 export default makeSource({
   contentDirPath: "./content",
-  documentTypes: [Projects],
+  documentTypes: [Projects, Authors],
 });

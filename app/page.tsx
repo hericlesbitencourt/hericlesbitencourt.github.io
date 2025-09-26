@@ -30,7 +30,7 @@ export default async function HomePage() {
           {name}
         </h1>
           <h2 className="mb-3 text-lg font-bold tracking-tight text-zinc-600 dark:text-white md:text-xl">
-            Software Engineer
+            Software Engineer • Full Stack Developer
           </h2>
           <div className="flex flex-wrap items-center gap-3">
             <a

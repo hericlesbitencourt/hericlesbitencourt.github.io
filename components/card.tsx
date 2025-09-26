@@ -1,5 +1,8 @@
-import Image from 'next/image';
+"use client";
+
+import Image from 'components/image';
 import Link from 'next/link';
+import { useState } from 'react';
 
 // Helper function to extract technologies from title
 const extractTechnologies = (title) => {
@@ -26,6 +29,7 @@ const formatDate = (dateString) => {
 };
 
 interface CardProps {
+  key?: string;
   title: string;
   description: string;
   imgSrc: string;
@@ -38,29 +42,42 @@ const Card = ({ title, description, imgSrc, href, date, tags = [] }: CardProps) 
   const technologies = extractTechnologies(title);
   const cleanedTitle = cleanTitle(title);
   const formattedDate = formatDate(date);
+  const [imgLoaded, setImgLoaded] = useState(false);
   
   return (
     <div className="h-full">
       <div className="group bg-white dark:bg-zinc-900 rounded-xl shadow-lg border border-gray-200 dark:border-zinc-800 overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 h-full flex flex-col">
         {imgSrc && (
           <div className="relative overflow-hidden">
+            {/* Custom placeholder shown while image is loading */}
+            {!imgLoaded && (
+              <div className="absolute inset-0 bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
+                <div className="text-gray-400 dark:text-gray-500">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                </div>
+              </div>
+            )}
             {href ? (
               <Link href={href} aria-label={`Link to ${title}`}>
                 <Image
                   alt={title}
                   src={imgSrc}
-                  className="object-cover w-full h-48 transition-transform duration-300 group-hover:scale-105"
+                  className={`object-cover w-full h-48 transition-transform duration-300 group-hover:scale-105 ${imgLoaded ? 'opacity-100' : 'opacity-0'}`}
                   width={400}
                   height={200}
+                  onLoad={() => setImgLoaded(true)}
                 />
               </Link>
             ) : (
               <Image
                 alt={title}
                 src={imgSrc}
-                className="object-cover w-full h-48 transition-transform duration-300 group-hover:scale-105"
+                className={`object-cover w-full h-48 transition-transform duration-300 group-hover:scale-105 ${imgLoaded ? 'opacity-100' : 'opacity-0'}`}
                 width={400}
                 height={200}
+                onLoad={() => setImgLoaded(true)}
               />
             )}
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>

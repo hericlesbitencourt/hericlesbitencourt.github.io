@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import siteMetadata from 'data/siteMetadata'
 
-const CommonSEO = ({ title, description, ogType, ogImage, twImage, canonicalUrl, pathname }) => {
+const CommonSEO = ({ title, description, ogType, ogImage, canonicalUrl, pathname }) => {
   return (
     <Head>
       <title>{title}</title>
@@ -17,11 +17,6 @@ const CommonSEO = ({ title, description, ogType, ogImage, twImage, canonicalUrl,
       ) : (
         <meta property="og:image" content={ogImage} key={ogImage} />
       )}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content={siteMetadata.twitter} />
-      <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={twImage} />
       <link
         rel="canonical"
         href={canonicalUrl ? canonicalUrl : `${siteMetadata.siteUrl}${pathname}`}
@@ -32,21 +27,20 @@ const CommonSEO = ({ title, description, ogType, ogImage, twImage, canonicalUrl,
 
 export const PageSEO = ({ title, description }) => {
   const ogImageUrl = siteMetadata.siteUrl + siteMetadata.socialBanner
-  const twImageUrl = siteMetadata.siteUrl + siteMetadata.socialBanner
   return (
     <CommonSEO
       title={title}
       description={description}
       ogType="website"
       ogImage={ogImageUrl}
-      twImage={twImageUrl}
+      canonicalUrl={siteMetadata.siteUrl}
+      pathname="/"
     />
   )
 }
 
 export const TagSEO = ({ title, description, pathname }) => {
   const ogImageUrl = siteMetadata.siteUrl + siteMetadata.socialBanner
-  const twImageUrl = siteMetadata.siteUrl + siteMetadata.socialBanner
   return (
     <>
       <CommonSEO
@@ -54,7 +48,8 @@ export const TagSEO = ({ title, description, pathname }) => {
         description={description}
         ogType="website"
         ogImage={ogImageUrl}
-        twImage={twImageUrl}
+        canonicalUrl={siteMetadata.siteUrl}
+        pathname={pathname}
       />
       <Head>
         <link
@@ -132,8 +127,6 @@ export const BlogSEO = ({
     description: summary,
   }
 
-  const twImageUrl = featuredImages[0].url
-
   return (
     <>
       <CommonSEO
@@ -141,8 +134,8 @@ export const BlogSEO = ({
         description={summary}
         ogType="article"
         ogImage={featuredImages}
-        twImage={twImageUrl}
         canonicalUrl={canonicalUrl}
+        pathname={url.replace(siteMetadata.siteUrl, '')}
       />
       <Head>
         {date && <meta property="article:published_time" content={publishedAt} />}

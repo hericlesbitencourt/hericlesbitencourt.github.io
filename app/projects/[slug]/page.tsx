@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation'
-import { allProjects } from 'contentlayer/generated'
+import { allProjects } from 'contentlayer2/generated'
 import PageTitle from 'components/PageTitle'
 import { MDXLayoutRenderer } from 'components/MDXComponents'
 
@@ -11,8 +11,8 @@ export async function generateStaticParams() {
   }))
 }
 
-export default function Projects({ params }: { params: { slug: string } }) {
-  const slug = params.slug
+export default async function Projects({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
   const project = allProjects.find((p) => p.slugAsParams === slug)
 
   if (!project) {

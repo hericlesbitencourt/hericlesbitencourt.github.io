@@ -3,7 +3,7 @@
 import { useState, useRef } from 'react'
 
 const Pre = (props) => {
-  const textInput = useRef(null)
+  const textInput = useRef<null | HTMLDivElement>(null)
   const [hovered, setHovered] = useState(false)
   const [copied, setCopied] = useState(false)
 
@@ -16,7 +16,7 @@ const Pre = (props) => {
   }
   const onCopy = () => {
     setCopied(true)
-    navigator.clipboard.writeText(textInput.current.textContent)
+    navigator.clipboard.writeText(textInput?.current?.textContent || '')
     setTimeout(() => {
       setCopied(false)
     }, 2000)

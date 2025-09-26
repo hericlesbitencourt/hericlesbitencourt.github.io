@@ -17,19 +17,19 @@ export default function ToolsPage() {
         <h3 id="coding">Coding</h3>
         <ul>
           <li>Languages: JavaScript/TypeScript and Python</li>
-          <li>Backend frameworks: Django, FastAPI, Spring Boot (including microservices) and NodeJS</li>
+          <li>Backend frameworks: Django, FastAPI, Flask</li>
           <li>Frontend frameworks/libraries: React, Next.js, Vue.js and Angular.</li>
           <li>
             Editor: VSCode
           </li>
           <li>Theme: Monokai Pro</li>
-          <li>Terminal: Hyper / zsh / Bash</li>
+          <li>Terminal: zsh / Bash</li>
           <li>Containerization: Docker and Kubernetes (K8S)</li>
           <li>Databases: PostgreSQL, MariaDB, MySQL server and SQLServer</li>
         </ul>
         <h3 id="operational-systems">Operational Systems</h3>
         <ul>
-          <li>Linux (Debian)</li>
+          <li>Linux (Debian based distros)</li>
           <li>Windows 11</li>
         </ul>
         <h3 id="pm-tools">Project Management Tools</h3>

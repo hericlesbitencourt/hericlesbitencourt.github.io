@@ -1,9 +1,7 @@
 import { ReactNode } from 'react'
-import type { Projects } from 'contentlayer/generated'
-import Comments from 'components/comments'
+import type { Projects } from 'contentlayer2/generated'
 import Link from 'components/link'
 import PageTitle from 'components/PageTitle'
-import SectionContainer from 'components/SectionContainer'
 import Image from 'components/image'
 import ImageCarousel from 'components/ImageCarousel'
 import BackButton from 'components/BackButton'
@@ -12,17 +10,6 @@ import formatDate from 'lib/utils/formatDate'
 import siteMetadata from 'data/siteMetadata'
 import ScrollTopAndComment from 'components/ScrollTopAndComment'
 import { BlogSEO } from 'components/SEO'
-
-const editUrl = (path) => `${siteMetadata.siteRepo}/blob/main/data/${path}`
-const discussUrl = (path) =>
-  `https://mobile.twitter.com/search?q=${encodeURIComponent(`${siteMetadata.siteUrl}/${path}`)}`
-
-const postDateTemplate: Intl.DateTimeFormatOptions = {
-  weekday: 'long',
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric',
-}
 
 interface LayoutProps {
   frontMatter: Projects
@@ -33,16 +20,8 @@ interface LayoutProps {
 }
 
 export default function PostLayout({authorDetails = [], frontMatter, prev, next, children }: LayoutProps) {
-  const { date, title, slug } = frontMatter
-  console.log('frontMatter', frontMatter)
-  console.log('authorDetails', authorDetails)
-  const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/projects/${fileName}`
-  const discussUrl = (slug) =>
-    `https://mobile.twitter.com/search?q=${encodeURIComponent(
-      `${siteMetadata.siteUrl}/blog/${slug}`
-    )}`
+  const { date, title } = frontMatter
 
-  const pageViews = undefined
   const canonicalUrl = `${siteMetadata.siteUrl}/projects/${frontMatter.slugAsParams}`
 
   return (
