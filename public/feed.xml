@@ -1,0 +1,134 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>[object Object]</title>
+      <link>https://hericlesbitencourt.com/projects</link>
+      <description>Software Engineer and Computer Engineering Student.</description>
+      <language>en-US</language>
+      <managingEditor>hericlesbitencourt@icloud.com (Hericles Bitencourt Rocha)</managingEditor>
+      <webMaster>hericlesbitencourt@icloud.com (Hericles Bitencourt Rocha)</webMaster>
+      <lastBuildDate>Sun, 01 Jan 2023 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://hericlesbitencourt.com/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://hericlesbitencourt.com/projects/affinity-app</guid>
+    <title>Affinity App</title>
+    <link>https://hericlesbitencourt.com/projects/affinity-app</link>
+    <description>Brief description of the Affinity App project</description>
+    <pubDate>Sun, 01 Jan 2023 00:00:00 GMT</pubDate>
+    <author>hericlesbitencourt@icloud.com (Hericles Bitencourt Rocha)</author>
+    <category>Work Projects</category><category>Mobile App</category><category>Development</category>
+  </item>
+
+  <item>
+    <guid>https://hericlesbitencourt.com/projects/from-wordpress-to-nextjs</guid>
+    <title>Why I&#39;ve switched from WordPress to Next.js to create my personal website?</title>
+    <link>https://hericlesbitencourt.com/projects/from-wordpress-to-nextjs</link>
+    <description>In the middle of 2021, I did some research to do a redesign of my personal website. This one was starting to get pretty old...</description>
+    <pubDate>Thu, 02 Jun 2022 00:00:00 GMT</pubDate>
+    <author>hericlesbitencourt@icloud.com (Hericles Bitencourt Rocha)</author>
+    <category>Story</category><category>Next-js</category><category>WordPress</category><category>WebSite</category>
+  </item>
+
+  <item>
+    <guid>https://hericlesbitencourt.com/projects/cpfl</guid>
+    <title>CPFL</title>
+    <link>https://hericlesbitencourt.com/projects/cpfl</link>
+    <description>Brief description of the CPFL project</description>
+    <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+    <author>hericlesbitencourt@icloud.com (Hericles Bitencourt Rocha)</author>
+    <category>Work Projects</category><category>Energy</category><category>Development</category>
+  </item>
+
+  <item>
+    <guid>https://hericlesbitencourt.com/projects/eletra</guid>
+    <title>Eletra</title>
+    <link>https://hericlesbitencourt.com/projects/eletra</link>
+    <description>Brief description of the Eletra project</description>
+    <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+    <author>hericlesbitencourt@icloud.com (Hericles Bitencourt Rocha)</author>
+    <category>Work Projects</category><category>Energy</category><category>Development</category>
+  </item>
+
+  <item>
+    <guid>https://hericlesbitencourt.com/projects/total-energies</guid>
+    <title>TotalEnergies Lubricants - Graphic Design</title>
+    <link>https://hericlesbitencourt.com/projects/total-energies</link>
+    <description>Since 2021, I have been working with TotalEnergies Lubricants teams to create &amp; develop graphic guidelines...</description>
+    <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+    <author>hericlesbitencourt@icloud.com (Hericles Bitencourt Rocha)</author>
+    <category>Work Projects</category><category>Graphic Design</category><category>Branding</category>
+  </item>
+
+  <item>
+    <guid>https://hericlesbitencourt.com/projects/toy-surfboards</guid>
+    <title>Toy Surfboards, design and creation of an e-commerce website</title>
+    <link>https://hericlesbitencourt.com/projects/toy-surfboards</link>
+    <description>Creation, configuration and development of an e-commerce website on WordPress for a famous surfboard shaper</description>
+    <pubDate>Thu, 22 Apr 2021 00:00:00 GMT</pubDate>
+    <author>hericlesbitencourt@icloud.com (Hericles Bitencourt Rocha)</author>
+    <category>Work Projects</category><category>Graphic Design</category><category>WebSite</category>
+  </item>
+
+  <item>
+    <guid>https://hericlesbitencourt.com/projects/informativoir</guid>
+    <title>Informativo IR</title>
+    <link>https://hericlesbitencourt.com/projects/informativoir</link>
+    <description>Brief description of the Informativo IR project</description>
+    <pubDate>Fri, 01 Jan 2021 00:00:00 GMT</pubDate>
+    <author>hericlesbitencourt@icloud.com (Hericles Bitencourt Rocha)</author>
+    <category>Work Projects</category><category>Web Development</category><category>Information System</category>
+  </item>
+
+  <item>
+    <guid>https://hericlesbitencourt.com/projects/power-meter</guid>
+    <title>Power Meter</title>
+    <link>https://hericlesbitencourt.com/projects/power-meter</link>
+    <description>Brief description of the Power Meter project</description>
+    <pubDate>Fri, 01 Jan 2021 00:00:00 GMT</pubDate>
+    <author>hericlesbitencourt@icloud.com (Hericles Bitencourt Rocha)</author>
+    <category>Work Projects</category><category>IoT</category><category>Energy</category>
+  </item>
+
+  <item>
+    <guid>https://hericlesbitencourt.com/projects/texas-seguros</guid>
+    <title>Texas Seguros | Contract Software Engineer</title>
+    <link>https://hericlesbitencourt.com/projects/texas-seguros</link>
+    <description>CRM solution for a major insurance provider, integrating Django, React, and Postgres. Focused on secure data handling, optimized database queries, and streamlined historical data processing.</description>
+    <pubDate>Sun, 01 Mar 2020 00:00:00 GMT</pubDate>
+    <author>hericlesbitencourt@icloud.com (Hericles Bitencourt Rocha)</author>
+    <category>Work Experience</category><category>Django</category><category>React</category><category>PostgreSQL</category>
+  </item>
+
+  <item>
+    <guid>https://hericlesbitencourt.com/projects/sae</guid>
+    <title>SAE</title>
+    <link>https://hericlesbitencourt.com/projects/sae</link>
+    <description>Brief description of the SAE project</description>
+    <pubDate>Wed, 01 Jan 2020 00:00:00 GMT</pubDate>
+    <author>hericlesbitencourt@icloud.com (Hericles Bitencourt Rocha)</author>
+    <category>Work Projects</category><category>Engineering</category><category>Development</category>
+  </item>
+
+  <item>
+    <guid>https://hericlesbitencourt.com/projects/sod-noronha-celpe</guid>
+    <title>Sod Noronha Celpe</title>
+    <link>https://hericlesbitencourt.com/projects/sod-noronha-celpe</link>
+    <description>Brief description of the Sod Noronha Celpe project</description>
+    <pubDate>Tue, 01 Jan 2019 00:00:00 GMT</pubDate>
+    <author>hericlesbitencourt@icloud.com (Hericles Bitencourt Rocha)</author>
+    <category>Work Projects</category><category>Energy</category><category>Development</category>
+  </item>
+
+  <item>
+    <guid>https://hericlesbitencourt.com/projects/havana-club-x-vald</guid>
+    <title>Havana Club x VALD</title>
+    <link>https://hericlesbitencourt.com/projects/havana-club-x-vald</link>
+    <description>In 2018 as part of its new brand strategy, Havana Club made a collaboration with a French artist: VALD.</description>
+    <pubDate>Mon, 01 Oct 2018 00:00:00 GMT</pubDate>
+    <author>hericlesbitencourt@icloud.com (Hericles Bitencourt Rocha)</author>
+    <category>Work Projects</category><category>Collaboration</category><category>Marketing</category><category>Social Media</category>
+  </item>
+
+    </channel>
+  </rss>

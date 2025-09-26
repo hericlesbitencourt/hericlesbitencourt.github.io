@@ -1,0 +1,104 @@
+{
+  "affinity-app": {
+    "title": "Texas Affinity - Affinity APP",
+    "date": "2019-10-01",
+    "tags": ["Work Projects", "React", "TypeScript", "PHP", "Laravel", "MariaDB"],
+    "summary": "Built a CRM application for an insurance company with React, Laravel and MariaDB, featuring a data import feature that significantly enhanced overall productivity.",
+    "description": "Built a CRM application for an insurance company with React, Laravel and MariaDB. The application included a data import feature that significantly enhanced overall productivity by reducing to 0% the necessity of sending informative emails.",
+    "technologies": ["React", "TypeScript", "PHP", "Laravel", "MariaDB", "REST APIs", "SQL", "MySQL", "Object-Oriented Programming"],
+    "achievements": [
+      "Successfully developed a comprehensive CRM solution for an insurance company",
+      "Implemented a data import feature that eliminated the need for informative emails",
+      "Enhanced overall productivity through streamlined data management processes"
+    ]
+  },
+  "cpfl": {
+    "title": "[Python/React/Django] ML/AI Integration System",
+    "date": "2024-07-01",
+    "tags": ["Work Projects", "Python", "React", "Django", "Machine Learning", "PostgreSQL"],
+    "summary": "Led the modernization of regulatory processes for an energy utility, leveraging machine learning and a robust data pipeline to optimize maintenance workflows and issue detection.",
+    "description": "Led the modernization of regulatory processes for an energy utility, leveraging machine learning and a robust data pipeline to optimize maintenance workflows and issue detection. The solution, built with React, Django, and PostgreSQL, using Websockets and BroadcastChannel API, integrated seamlessly with machine learning algorithms through REST APIs, providing real-time insights and interactive visualizations for end users.",
+    "technologies": ["Python", "React", "Django", "PostgreSQL", "WebSocket", "REST APIs", "Machine Learning", "WebSockets", "BroadcastChannel API"],
+    "achievements": [
+      "Designed and implemented a React front-end to present maintenance workflows and machine learning outputs",
+      "Developed Django back-end features to facilitate real-time communication with machine learning services",
+      "Configured and optimized PostgreSQL for efficient data storage and retrieval",
+      "Implemented robust error handling and API management to enhance system reliability",
+      "Created dynamic data visualizations for interpreting machine learning insights"
+    ]
+  },
+  "eletra": {
+    "title": "[React/TypeScript/Python/Django] Wind Turbine Blade Wear Prediction System",
+    "date": "2022-10-01",
+    "tags": ["Work Projects", "React", "TypeScript", "Python", "Django", "Wind Energy"],
+    "summary": "Contributed to the maintenance, bug fixing, and deployment of a high-security software system for a wind turbine blade wear prediction project in the hydroelectric industry.",
+    "description": "Contributed to the maintenance, bug fixing, and deployment of a high-security software system for a wind turbine blade wear prediction project in the hydroelectric industry. Operated in an offline, tightly controlled environment, deploying updates for both the React front-end and Django back-end. Ensured the system functioned seamlessly in both development and production environments on an IIS server, overcoming restrictions such as the lack of direct internet access.",
+    "technologies": ["React", "TypeScript", "Python", "Django", "Django REST Framework", "PostgreSQL", "IIS", "Shell Scripting", "styled-components"],
+    "achievements": [
+      "Diagnosed and resolved critical bugs, maintaining a stable and reliable codebase for production use",
+      "Deployed front-end and back-end artifacts to a secure IIS server, adhering to stringent security protocols",
+      "Utilized Django APScheduler to ensure scheduled tasks operated reliably in both environments",
+      "Coordinated secure artifact transfers, performing integrity checks for successful deployment",
+      "Introduced incremental enhancements to the React front-end for improved usability"
+    ]
+  },
+  "informativoir": {
+    "title": "[React/TypeScript/Python/Django] Texas Seguros - informativoir.com.br",
+    "date": "2020-03-01",
+    "tags": ["Work Projects", "React", "TypeScript", "Python", "Django", "PostgreSQL"],
+    "summary": "Designed a CRM with Django, DRF (Django REST Framework), React, and PostgreSQL, saving the company $5 million annually and resolving complex historical data issues.",
+    "description": "Designed a CRM with Django, DRF (Django REST Framework), React, and PostgreSQL, saving the company $5 million annually. Resolved a complex historical data issue for a contract with SulAmerica, the 2nd largest Brazilian insurance company with more than 7+ million users. Engineered system modules including users, plans, taxes, and dental, ensuring data integrity and reducing processing time by 40%. Optimized database queries to reduce time of requests by 50%, and developed algorithms to calculate income tax statements.",
+    "technologies": ["React", "TypeScript", "Python", "Django", "Django REST Framework", "PostgreSQL", "REST APIs", "SQL", "Object-Oriented Programming"],
+    "achievements": [
+      "Designed a CRM solution that saved the company $5 million annually",
+      "Resolved complex historical data issues for a contract with SulAmerica (7+ million users)",
+      "Engineered system modules ensuring data integrity and reducing processing time by 40%",
+      "Optimized database queries to reduce request time by 50%"
+    ]
+  },
+  "power meter": {
+    "title": "[React Native/TypeScript] Ictus Power Meter",
+    "date": "2023-05-01",
+    "tags": ["Work Projects", "React Native", "TypeScript", "Mobile App", "Bluetooth", "AWS"],
+    "summary": "Developed a cross-platform mobile application for professional cyclists to interface with a Bluetooth-enabled power meter device, leveraging AWS services for secure data storage and processing.",
+    "description": "Developed a cross-platform mobile application for professional cyclists to interface with a Bluetooth-enabled power meter device. Built with React Native, the app provided real-time power metrics and performance insights, leveraging AWS services for secure data storage and processing. Successfully deployed to both the Google Play Store and Apple App Store, delivering a seamless experience for end users.",
+    "technologies": ["React Native", "TypeScript", "AWS", "Amazon S3", "Amazon DynamoDB", "AWS Lambda", "API Gateway", "Bluetooth", "styled-components"],
+    "achievements": [
+      "Designed and implemented a React Native mobile interface for real-time cycling power metrics",
+      "Integrated AWS services including S3, DynamoDB, Lambda, and API Gateway for data management",
+      "Successfully deployed the app to both Play Store and App Store with compliance to platform requirements",
+      "Collaborated with firmware engineers to ensure seamless Bluetooth communication",
+      "Optimized app performance, reducing latency and improving responsiveness under varying network conditions"
+    ]
+  },
+  "sae": {
+    "title": "[Vue.js/TypeScript/Spring Boot] Wi-SUN Network Simulation Tool",
+    "date": "2022-09-01",
+    "tags": ["Work Projects", "Vue.js", "TypeScript", "Spring Boot", "OracleDB", "Leaflet"],
+    "summary": "Developed a comprehensive simulation tool for Wi-SUN network devices, designed to help users visualize device locations and network topology on an interactive map.",
+    "description": "Developed a comprehensive simulation tool for Wi-SUN network devices, designed to help users visualize device locations and network topology on an interactive map. The project combined a robust Vue.js front-end with Leaflet for mapping, and a Spring Boot back-end with OracleDB for data management and simulations.",
+    "technologies": ["Vue.js", "TypeScript", "Spring Boot", "OracleDB", "Leaflet", "Linux", "PostgreSQL", "Shell Scripting", "Vuex", "axios"],
+    "achievements": [
+      "Designed and implemented a Vue.js front-end integrated with Leaflet for real-time visualization",
+      "Built and maintained Spring Boot microservices for CRUD operations and network simulation logic",
+      "Integrated OracleDB to securely store device configurations and simulation parameters",
+      "Enhanced user authentication mechanisms and implemented basic security measures",
+      "Improved team workflows by introducing and maintaining Swagger documentation"
+    ]
+  },
+  "sod noronha celpe": {
+    "title": "[Python/Django] Dispatch Optimization System",
+    "date": "2024-05-01",
+    "tags": ["Work Projects", "Python", "Django", "MATLAB", "Energy", "Remote Deployment"],
+    "summary": "Developed and maintained the web interface for communication with the Dispatch Optimization System (SOD) used at the substation on Fernando de Noronha Island.",
+    "description": "Developed and maintained the web interface for communication with the Dispatch Optimization System (SOD) used at the substation on Fernando de Noronha Island. The web system, built with Django, was designed to integrate with external APIs and simulate data from diesel generators using a proprietary program, ActionView. The project required precise execution in a remote environment with limited internet connectivity and communication.",
+    "technologies": ["Python", "Django", "MATLAB", "CSS", "IIS", "JavaScript", "APScheduler"],
+    "achievements": [
+      "Updated and maintained the Django codebase for seamless communication with external APIs",
+      "Integrated and maintained MATLAB scripts for periodic job execution using Django APScheduler",
+      "Authored a detailed deployment manual for system implementation in challenging remote environments",
+      "Executed deployment and system tests on-site, ensuring 100% functionality despite limited internet",
+      "Conducted rigorous testing to validate system stability and accuracy of data exchange"
+    ]
+  }
+}

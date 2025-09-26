@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import Sidebar from '../components/sidebar';
 import { Analytics } from '@vercel/analytics/react';
+import { ThemeProvider } from 'next-themes';
 
 const kaisei = localFont({
   src: '../public/fonts/Raleway-Bold.ttf',
@@ -23,6 +24,7 @@ export const metadata: Metadata = {
     description: 'Software Engineer and Computer Engineering Student.',
     url: 'https://hericlesbitencourt.com',
     siteName: 'Hericles Bitencourt Rocha',
+    emails: 'hericlesbitencourt@icloud.com',
     images: [
       {
         url: 'https://hericlesbitencourt.com/og.jpg',
@@ -60,18 +62,21 @@ export default function RootLayout({
 }) {
   return (
     <html
-      lang="en"
       className={clsx(
-        'text-black bg-white dark:text-white dark:bg-[#111010]',
+        "antialiased",
         kaisei.variable
       )}
-    >
-      <body className="antialiased max-w-4xl mb-40 flex flex-col mx-4 mt-8 md:mt-20 lg:mt-32 lg:mx-auto">
-        <Sidebar />
-        <main className="flex-auto min-w-0 mt-6 md:mt-0 flex flex-col px-2 md:px-0">
-          {children}
-          <Analytics />
-        </main>
+      suppressHydrationWarning>
+      <body className="bg-gradient-to-br from-zinc-50 via-white to-zinc-100 dark:from-zinc-900 dark:via-zinc-800 dark:to-zinc-900 min-h-screen">
+        <ThemeProvider attribute="class" defaultTheme={'system'}>
+          <div className="flex flex-col md:flex-row max-w-7xl mx-auto">
+            <Sidebar />
+            <main className="flex-1 min-w-0 mt-0 md:mt-8 lg:mt-16 flex flex-col px-4 md:px-8 lg:px-12 pb-16">
+              {children}
+              <Analytics />
+            </main>
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );

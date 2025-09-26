@@ -1,63 +1,85 @@
 import { defineDocumentType, makeSource } from "contentlayer/source-files";
-import remarkGfm from "remark-gfm";
-import rehypePrettyCode from "rehype-pretty-code";
-import rehypeSlug from "rehype-slug";
-import rehypeAutolinkHeadings from "rehype-autolink-headings";
 
 /** @type {import('contentlayer/source-files').ComputedFields} */
 const computedFields = {
   slug: {
     type: "string",
-    resolve: (doc) => doc._raw.flattenedPath,
+    resolve: (doc) => `/${doc._raw.flattenedPath}`,
   },
-  tweetIds: {
-    type: "array",
+  slugAsParams: {
+    type: "string",
+    resolve: (doc) => doc._raw.flattenedPath.split("/").slice(1).join("/"),
+  },
+  toc: {
+    type: "json",
     resolve: (doc) => {
-      const tweetMatches = doc.body.raw.match(
-        /<StaticTweet\sid="[0-9]+"\s\/>/g
-      );
-      return tweetMatches?.map((tweet) => tweet.match(/[0-9]+/g)[0]) || [];
+      // This would normally be populated by a remark plugin
+      // For now, we'll return an empty array
+      return [];
     },
   },
-  structuredData: {
-    type: "object",
-    resolve: (doc) => ({
-      "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      headline: doc.title,
-      datePublished: doc.publishedAt,
-      dateModified: doc.publishedAt,
-      description: doc.summary,
-      image: doc.image
-        ? `https://hericlesbitencourt.com${doc.image}`
-        : `https://hericlesbitencourt.com/api/og?title=${doc.title}`,
-      url: `https://hericlesbitencourt.com/blog/${doc._raw.flattenedPath}`,
-      author: {
-        "@type": "Person",
-        name: "Hericles Bitencourt Rocha",
-      },
-    }),
+  layout: {
+    type: "string",
+    resolve: (doc) => {
+      // Default layout for projects
+      return "PostLayout";
+    },
   },
 };
 
-export const Blog = defineDocumentType(() => ({
-  name: "Blog",
-  filePathPattern: `**/*.mdx`,
+// export const Page = defineDocumentType(() => ({
+//   name: "Page",
+//   filePathPattern: `pages/**/*.mdx`,
+//   contentType: "mdx",
+//   fields: {
+//     title: {
+//       type: "string",
+//       required: true,
+//     },
+//     description: {
+//       type: "string",
+//     },
+//   },
+//   computedFields,
+// }));
+
+export const Projects = defineDocumentType(() => ({
+  name: "Projects",
+  filePathPattern: `projects/**/*.mdx`,
   contentType: "mdx",
   fields: {
     title: {
       type: "string",
       required: true,
     },
-    publishedAt: {
+    description: {
       type: "string",
-      required: true,
+    },
+    imgSrc: {
+      type: "string",
+    },
+    href: {
+      type: "string",
+    },
+    date: {
+      type: "string",
+    },
+    tags: {
+      type: "list",
+      of: {
+        type: "string",
+      },
+    },
+    draft: {
+      type: "boolean",
+    },
+    images: {
+      type: "list",
+      of: {
+        type: "string",
+      },
     },
     summary: {
-      type: "string",
-      required: true,
-    },
-    image: {
       type: "string",
     },
   },
@@ -65,39 +87,6 @@ export const Blog = defineDocumentType(() => ({
 }));
 
 export default makeSource({
-  contentDirPath: "content",
-  documentTypes: [Blog],
-  mdx: {
-    remarkPlugins: [remarkGfm],
-    rehypePlugins: [
-      rehypeSlug,
-      [
-        rehypePrettyCode,
-        {
-          theme: "one-dark-pro",
-          onVisitLine(node) {
-            // Prevent lines from collapsing in `display: grid` mode, and allow empty
-            // lines to be copy/pasted
-            if (node.children.length === 0) {
-              node.children = [{ type: "text", value: " " }];
-            }
-          },
-          onVisitHighlightedLine(node) {
-            node.properties.className.push("line--highlighted");
-          },
-          onVisitHighlightedWord(node) {
-            node.properties.className = ["word--highlighted"];
-          },
-        },
-      ],
-      [
-        rehypeAutolinkHeadings,
-        {
-          properties: {
-            className: ["anchor"],
-          },
-        },
-      ],
-    ],
-  },
+  contentDirPath: "./content",
+  documentTypes: [Projects],
 });

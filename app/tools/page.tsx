@@ -17,7 +17,7 @@ export default function ToolsPage() {
         <h3 id="coding">Coding</h3>
         <ul>
           <li>Languages: JavaScript/TypeScript and Python</li>
-          <li>Backend frameworks: Django, FastAPI and NodeJS</li>
+          <li>Backend frameworks: Django, FastAPI, Spring Boot (including microservices) and NodeJS</li>
           <li>Frontend frameworks/libraries: React, Next.js, Vue.js and Angular.</li>
           <li>
             Editor: VSCode
@@ -38,6 +38,10 @@ export default function ToolsPage() {
           <li>Jira Software</li>
           <li>Slack</li>
           <li>Agile Methodology - Scrum and Kanban boards</li>
+        </ul>
+        <h3 id="pm-tools">Design Tools</h3> 
+        <ul>
+          <li>Figma</li>
         </ul>
       </div>
     </section>
