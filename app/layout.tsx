@@ -3,7 +3,6 @@ import clsx from 'clsx';
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import Sidebar from '../components/sidebar';
-import { Analytics } from '@vercel/analytics/react';
 import { ThemeProvider } from 'next-themes';
 
 const kaisei = localFont({
@@ -73,7 +72,6 @@ export default function RootLayout({
             <Sidebar />
             <main className="flex-1 min-w-0 mt-0 md:mt-8 lg:mt-16 flex flex-col px-4 md:px-8 lg:px-12 pb-16">
               {children}
-              <Analytics />
             </main>
           </div>
         </ThemeProvider>

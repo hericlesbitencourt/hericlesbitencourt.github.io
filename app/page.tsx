@@ -13,8 +13,6 @@ import EmailCopyButton from 'components/EmailCopyButton';
 import EmailCopyHero from 'components/EmailCopyHero';
 import WhatsAppCopyHero from 'components/WhatsAppCopyHero';
 
-export const revalidate = 60;
-
 export default async function HomePage() {
 
   return (
